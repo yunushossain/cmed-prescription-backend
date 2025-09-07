@@ -22,7 +22,7 @@ public class PrescriptionApplication {
             if (userRepo.findByUsername("admin").isEmpty()) {
                 User u = new User();
                 u.setUsername("admin");
-                u.setPassword(encoder.encode("password"));
+                u.setPassword(encoder.encode("admin123"));
                 u.setRole("ROLE_ADMIN");
                 userRepo.save(u);
             }
